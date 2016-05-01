@@ -306,7 +306,7 @@ INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_film
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000072, 'Cidade de Deus', 1, 'EDICAO', 		7, 			00000000067);
 
 --INSERINDO AMBIENTE DE GRAVACAO
-INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set 1 - hobbit', 100, 93012034, 'Galpao 2');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set 1', 100, 93012034, 'Galpao 2');
 
 --INSERINDO EQUIPAMENTOS
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (1, 'Equipamento1', 31886.00, '4 anos');
@@ -394,13 +394,86 @@ INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (80, 'Eq
 INSERT INTO cenario (tomb,tema,material,tamanho) VALUES ();
 
 --INSERINDO COMPUTADORES
-INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES ();
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (1,  33333333333, 'intel i8 877 quad core', '8 GB', '2 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (2,  88888888888, 'intel i4 486 quad core', '8 GB', '6 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (3,  00000000004, 'intel i5 462 quad core', '2 GB', '7 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (4,  00000000010, 'intel i5 863 quad core', '8 GB', '6 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (5,  00000000011, 'intel i2 272 quad core', '1 GB', '7 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (6,  00000000015, 'intel i7 667 quad core', '9 GB', '9 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (7,  00000000024, 'intel i5 962 quad core', '9 GB', '9 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (8,  00000000025, 'intel i1 1029 quad core', '2 GB', '2 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (9,  00000000026, 'intel i4 169 quad core', '4 GB', '1 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (10, 00000000033, 'intel i8 111 quad core', '8 GB', '2 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (11, 00000000034, 'intel i3 521 quad core', '1 GB', '7 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (12, 00000000041, 'intel i3 298 quad core', '5 GB', '6 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (13, 00000000054, 'intel i2 513 quad core', '4 GB', '3 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (14, 00000000055, 'intel i1 1056 quad core', '9 GB', '2 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (15, 00000000063, 'intel i5 1096 quad core', '6 GB', '6 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (16, 00000000064, 'intel i7 184 quad core', '1 GB', '7 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (17, 00000000073, 'intel i4 946 quad core', '9 GB', '3 TB');
+INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (18, 00000000074, 'intel i1 224 quad core', '3 GB', '5 TB');
 
---INSERINDO CAMERAS
-INSERT INTO camera (tomb, modelo, fabricante) VALUES ();
+
+--INSERINDO CAMERAS	
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (19, 'SZ071', 'Pentax');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (20, 'MB631', 'Nikon');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (21, 'PV575', 'Canon');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (22, 'RI817', 'Panasonic');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (23, 'RN888', 'Casio');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (24, 'Tq005', 'Kodak');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (25, 'Eu471', 'Canon');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (26, 'XV520', 'HP');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (27, 'QO232', 'Samsung');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (28, 'VS508', 'Nikon');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (29, 'LV506', 'Samsung');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (30, 'YP437', 'Canon');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (31, 'JV200', 'Olympus');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (32, 'BF056', 'Samsung');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (33, 'EL635', 'Casio');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (34, 'OS866', 'Casio');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (35, 'UK307', 'Casio');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (36, 'WV812', 'HP');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (37, 'BY706', 'HP');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (38, 'TJ618', 'Olympus');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (39, 'WV064', 'HP');
+INSERT INTO camera (tomb, modelo, fabricante) VALUES (40, 'RV023', 'Pentax');
 
 --INSERINDO LENTES
-INSERT INTO lentes (tomb, lente) VALUES ();
+INSERT INTO lentes (tomb, lente) VALUES (19, 'BR071');
+INSERT INTO lentes (tomb, lente) VALUES (20, 'HB317');
+INSERT INTO lentes (tomb, lente) VALUES (21, 'ZR545');
+INSERT INTO lentes (tomb, lente) VALUES (22, 'YK064');
+INSERT INTO lentes (tomb, lente) VALUES (23, 'QD688');
+INSERT INTO lentes (tomb, lente) VALUES (24, 'RX488');
+INSERT INTO lentes (tomb, lente) VALUES (25, 'FW005');
+INSERT INTO lentes (tomb, lente) VALUES (26, 'YJ713');
+INSERT INTO lentes (tomb, lente) VALUES (27, 'EB006');
+INSERT INTO lentes (tomb, lente) VALUES (28, 'CR254');
+INSERT INTO lentes (tomb, lente) VALUES (29, 'CE112');
+INSERT INTO lentes (tomb, lente) VALUES (31, 'OL506');
+INSERT INTO lentes (tomb, lente) VALUES (32, 'NL378');
+INSERT INTO lentes (tomb, lente) VALUES (34, 'OH526');
+INSERT INTO lentes (tomb, lente) VALUES (35, 'OC667');
+INSERT INTO lentes (tomb, lente) VALUES (36, 'NW263');
+INSERT INTO lentes (tomb, lente) VALUES (38, 'BG071');
+INSERT INTO lentes (tomb, lente) VALUES (39, 'LC210');
+INSERT INTO lentes (tomb, lente) VALUES (40, 'SV253');
+INSERT INTO lentes (tomb, lente) VALUES (19, 'QK727');
+INSERT INTO lentes (tomb, lente) VALUES (20, 'XI561');
+INSERT INTO lentes (tomb, lente) VALUES (22, 'TP232');
+INSERT INTO lentes (tomb, lente) VALUES (23, 'WF573');
+INSERT INTO lentes (tomb, lente) VALUES (24, 'MJ245');
+INSERT INTO lentes (tomb, lente) VALUES (25, 'RD231');
+INSERT INTO lentes (tomb, lente) VALUES (26, 'FO002');
+INSERT INTO lentes (tomb, lente) VALUES (27, 'UN634');
+INSERT INTO lentes (tomb, lente) VALUES (29, 'XQ872');
+INSERT INTO lentes (tomb, lente) VALUES (30, 'AC415');
+INSERT INTO lentes (tomb, lente) VALUES (31, 'HC576');
+INSERT INTO lentes (tomb, lente) VALUES (32, 'KR480');
+INSERT INTO lentes (tomb, lente) VALUES (35, 'KX318');
+INSERT INTO lentes (tomb, lente) VALUES (36, 'XY632');
+INSERT INTO lentes (tomb, lente) VALUES (38, 'CQ752');
+INSERT INTO lentes (tomb, lente) VALUES (39, 'TD603');
 
 --INSERINDO TELEFONE DOS FUNCIONARIOS
 INSERT INTO telefone_func (cpf, fone) VALUES (11111111111, 081191811211);

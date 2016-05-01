@@ -128,7 +128,7 @@ CREATE TABLE cenario(
 CREATE TABLE computador(
 	tomb NUMBER,
 	cpf_editor NUMBER,
-	processador VARCHAR2(20),
+	processador VARCHAR2(30),
 	memoria VARCHAR2(20),
 	disco_rigido VARCHAR2(20),
 	CONSTRAINT computador_pk PRIMARY KEY (tomb),

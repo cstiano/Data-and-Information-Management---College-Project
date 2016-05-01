@@ -12,7 +12,7 @@ INSERT INTO ceps (cep,rua) VALUES (12345678, 'Rua do Hobbit');
 INSERT INTO ceps (cep,rua) VALUES (23456789, 'Rua do Batman');
 INSERT INTO ceps (cep,rua) VALUES (01923884, 'Rua do Bale');
 INSERT INTO ceps (cep,rua) VALUES (21236213, 'Rua do Coringa');
-INSERT INTO ceps (cep,rua) VALUES (23456789, 'Rua da Maggie');
+INSERT INTO ceps (cep,rua) VALUES (23256789, 'Rua da Maggie');
 INSERT INTO ceps (cep,rua) VALUES (00000001, 'Rua da Luta');
 INSERT INTO ceps (cep,rua) VALUES (00000002, 'Rua do Pit');
 INSERT INTO ceps (cep,rua) VALUES (00000003, 'Rua do Norton');
@@ -81,7 +81,7 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario)
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (99999999999, 22222222222222, 'Christopher Nolan', 		23456789, 'n 200, apto 101', to_date('30/07/1970', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000001, 22222222222222, 'Christian Bale', 		01923884, 'n 200, apto 106', to_date('30/01/1974', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000002, 22222222222222, 'Heath Ledger', 			21236213, 'n 200, apto 106', to_date('04/04/1979', 'dd/mm/yy'), 'M');
-INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000003, 22222222222222, 'Maggie Gyllenhaal', 		23456789, 'n 200, apto 106', to_date('16/11/1977', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000003, 22222222222222, 'Maggie Gyllenhaal', 		23256789, 'n 200, apto 106', to_date('16/11/1977', 'dd/mm/yy'), 'F');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000004, 22222222222222, 'Masayuki Nakano', 		23456789, 'n 200, apto 102', to_date('30/07/1970', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000005, 22222222222222, 'Michiyuki Kawashima', 	23456789, 'n 200, apto 103', to_date('30/07/1970', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000006, 22222222222222, 'Ritchie Coster', 		23456789, 'n 200, apto 104', to_date('30/07/1970', 'dd/mm/yy'), 'M');
@@ -815,10 +815,65 @@ INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000079, 88, 
 INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000080, 89, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
 
 --INSERINDO MONTAGENS
--- INSERT INTO monta (cpf, nome_filme) VALUES ();
+INSERT INTO monta (cpf, nome_filme) VALUES (33333333333, 'O Hobbit');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000004, 'Batman: O cavaleiro das trevas');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000010, 'Clube da Luta');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000015, 'O espetacular Homem-Aranha');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000024, 'Anjos e Demonios');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000025, 'As Panteras Detonando');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000033, 'Godzilla');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000041, 'Interestelar');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000054, 'Piratas do Caribe: Navegando em Aguas Misteriosaso');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000063, 'Jurassic World: O Mundo dos Dinossauros');
+INSERT INTO monta (cpf, nome_filme) VALUES (00000000073, 'Cidade de Deus');
 
--- --INSERINDO REVISOES
--- INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES ();
+--INSERINDO REVISOES
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (33333333333, 11111111111, 'O Hobbit', to_date('01/12/2000', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000004, 99999999999, 'Batman: O cavaleiro das trevas', to_date('01/12/2007', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000004, 99999999999, 'Batman: O cavaleiro das trevas', to_date('01/11/2007', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000004, 99999999999, 'Batman: O cavaleiro das trevas', to_date('01/10/2007', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000010, 00000000007, 'Clube da Luta', to_date('01/12/1998', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000010, 00000000007, 'Clube da Luta', to_date('10/12/1998', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000015, 00000000012, 'O espetacular Homem-Aranha', to_date('01/12/2011', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000015, 00000000012, 'O espetacular Homem-Aranha', to_date('02/12/2011', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000015, 00000000012, 'O espetacular Homem-Aranha', to_date('03/12/2011', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000015, 00000000012, 'O espetacular Homem-Aranha', to_date('04/12/2011', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000024, 00000000018, 'Anjos e Demonios', to_date('01/12/2008', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000025, 00000000020, 'As Panteras Detonando', to_date('01/12/2002', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000033, 00000000035, 'Godzilla', to_date('01/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000033, 00000000035, 'Godzilla', to_date('02/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000033, 00000000035, 'Godzilla', to_date('03/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('01/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('02/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('03/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('04/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('05/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000041, 00000000047, 'Interestelar', to_date('06/12/2013', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000054, 00000000051, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', to_date('01/12/2010', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000063, 00000000059, 'Jurassic World: O Mundo dos Dinossauros', to_date('01/12/2014', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000073, 00000000067, 'Cidade de Deus', to_date('01/12/2001', 'dd/mm/yy'));
+INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000073, 00000000067, 'Cidade de Deus', to_date('02/12/2001', 'dd/mm/yy'));
 
--- --INSERINDO EQUIPAMENTOS ADQUIRIDOS POR FILMES
--- INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ();
+--INSERINDO EQUIPAMENTOS ADQUIRIDOS POR FILMES
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O Hobbit', 20, Set_1);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 34, Set_2);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 14, Set_3);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 51, Set_4);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 22, Set_5);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 31, Set_6);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 1, Set_7);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 63, Set_8);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 39, Set_9);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Jurassic World: O Mundo dos Dinossauros', 8, Set_10);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 54, Set_11);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 39, Set_12);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 2, Set_13);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 19, Set_14);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 10, Set_15);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 5, Set_16);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 65, Set_17);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 28, Set_18);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 25, Set_19);
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 16, Set_20);
+
+

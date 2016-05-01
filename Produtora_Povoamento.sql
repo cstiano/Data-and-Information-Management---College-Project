@@ -26,6 +26,16 @@ INSERT INTO ceps (cep,rua) VALUES (00000010, 'Rua dos Ricos');
 INSERT INTO ceps (cep,rua) VALUES (00000011, 'Rua das Velas');
 INSERT INTO ceps (cep,rua) VALUES (00000012, 'Rua das Godzilla');
 INSERT INTO ceps (cep,rua) VALUES (00000013, 'Rua das Interestelar');
+INSERT INTO ceps (cep,rua) VALUES (00000014, 'Rua dos Piratas');
+INSERT INTO ceps (cep,rua) VALUES (00000015, 'Rua do Jhonny');
+INSERT INTO ceps (cep,rua) VALUES (00000016, 'Rua da Penelope');
+INSERT INTO ceps (cep,rua) VALUES (00000017, 'Rua dos Dinossauros');
+INSERT INTO ceps (cep,rua) VALUES (00000018, 'Rua da Brenholtz');
+INSERT INTO ceps (cep,rua) VALUES (00000019, 'Rua do Brad');
+INSERT INTO ceps (cep,rua) VALUES (00000020, 'Rua de Deus');
+INSERT INTO ceps (cep,rua) VALUES (00000021, 'Rua do Dadinho');
+INSERT INTO ceps (cep,rua) VALUES (00000022, 'Rua da Alice');
+
 
 --INSERINDO PRODUTORAS
 INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (11111111111111, 'Sony Pictures Entertainment', 		11111111, NULL);
@@ -67,7 +77,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario)
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000015, 11111111111111, 'Steve Kloves ', 			00000004, 'n 1234', to_date('26/05/1962', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000016, 11111111111111, 'Andrew Garfield', 		00000004, 'n 1242', to_date('20/08/1983', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000017, 11111111111111, 'Emma Stone', 			00000004, 'n 1235', to_date('06/11/1988', 'dd/mm/yy'), 'F');
-INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000018, 11111111111111, 'Rhys Ifans', 			00000004, 'n 1236', to_date('22/07/1967', 'dd/mm/yy'), 'M');
 
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000018, 11111111111111, 'Ron Howard', 			00000005, 'n 1236', to_date('01/03/1954', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000019, 11111111111111, 'David Koepp', 			00000006, 'n 1312', to_date('09/06/1963', 'dd/mm/yy'), 'M');
@@ -105,6 +114,39 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario)
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000048, 66666666666666, 'Stacey Douglas', 		00000013, 'n 207', to_date('16/12/1971', 'dd/mm/yy'), 'M');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000049, 66666666666666, 'Luisa Abel',		 		00000013, 'n 208', to_date('03/10/1976', 'dd/mm/yy'), 'F');
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000050, 66666666666666, 'Mary Zophres',	 		00000013, 'n 209', to_date('23/03/1964', 'dd/mm/yy'), 'F');
+
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000051, 33333333333333, 'Rob Marshall',	 		00000014, 'n 301', to_date('17/10/1960', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000052, 33333333333333, 'Chad Oman',		 		00000014, 'n 302', to_date('15/05/1965', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000053, 33333333333333, 'Terry Rossio',	 		00000014, 'n 303', to_date('02/06/1960', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000054, 33333333333333, 'Ted Elliot',		 		00000015, 'n 401', to_date('23/03/1961', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000055, 33333333333333, 'Terry Rossio',	 		00000015, 'n 402', to_date('02/07/1960', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000056, 33333333333333, 'Johnny Depp',	 		00000015, 'n 403', to_date('09/06/1963', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000057, 33333333333333, 'Penelope Cruz',	 		00000016, 'n 209', to_date('28/04/1974', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000058, 33333333333333, 'Geoffrey Rush',	 		00000016, 'n 210', to_date('06/07/1951', 'dd/mm/yy'), 'M');
+
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000059, 44444444444444, 'Colin Trevorrow',	 	00000017, 'n 211', to_date('13/09/1976', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000060, 44444444444444, 'Rick Jaffa',		 		00000017, 'n 212', to_date('06/06/1989', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000061, 44444444444444, 'Amanda Silver',	 		00000017, 'n 213', to_date('29/07/1989', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000062, 44444444444444, 'Carla Brenholtz',	 	00000017, 'n 214', to_date('06/07/1951', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000063, 44444444444444, 'Laura Aguon',	 		00000018,  'n 90', to_date('12/09/1970', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000064, 44444444444444, 'Chloe Perrin',	 		00000018,  'n 91', to_date('12/10/1980', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000065, 44444444444444, 'Chris Pratt',	 		00000019, 'n 331', to_date('21/07/1979', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000066, 44444444444444, 'Bryce Dallas Howard',	00000019, 'n 333', to_date('02/03/1981', 'dd/mm/yy'), 'F');
+
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000067, 99999999999999, 'Fernando Meirelles',		00000020, 'n 321', to_date('09/11/1955', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000068, 99999999999999, 'Katia Lund',				00000020, 'n 322', to_date('12/03/1966', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000069, 99999999999999, 'Paulo Lins',				00000020, 'n 323', to_date('09/10/1958', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000070, 99999999999999, 'Ed Cortes',				00000020, 'n 324', to_date('29/09/1977', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000071, 99999999999999, 'Cesar Charlone',			00000021, 'n 355', to_date('21/07/1958', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000072, 99999999999999, 'Daniel Rezende',			00000021, 'n 451', to_date('30/08/1969', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000073, 99999999999999, 'Donna Meirelles',		00000021, 'n 453', to_date('02/03/1981', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000074, 99999999999999, 'Malu Miranda',			00000021, 'n 471', to_date('08/05/1978', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000075, 99999999999999, 'Alexandre Rodrigues',	00000021, 'n 500', to_date('21/05/1983', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000076, 99999999999999, 'Leandro Firmino',		00000021, 'n 534', to_date('23/06/1978', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000077, 99999999999999, 'Phellipe Haagensen',		00000022, 'n 881', to_date('02/03/1984', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000078, 99999999999999, 'Douglas Silva',			00000022, 'n 900', to_date('21/06/1988', 'dd/mm/yy'), 'M');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000079, 99999999999999, 'Alice Braga',			00000022, 'n 891', to_date('15/04/1983', 'dd/mm/yy'), 'F');
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, salario) VALUES (00000000080, 11111111111111, 'Rhys Ifans', 			00000004, 'n 1236', to_date('22/07/1967', 'dd/mm/yy'), 'M');
 
 --INSERINDO TELEFONES PRODUTORA
 INSERT INTO prod_fone (cnpj,fone) VALUES (11111111111111, 081981621412);
@@ -157,7 +199,7 @@ INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000009, 'Th
 
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000016, 'Spider-Man',	'Agencia11', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000017, 'Gwen Stacy',	'Agencia11', NULL);
-INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000018, 'The Lizard',	'Agencia13', NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000080, 'The Lizard',	'Agencia13', NULL);
 
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000021, 'Robert Langdon',	'Agencia16', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000022, 'Camerlengo',		'Agencia12', NULL);
@@ -178,6 +220,20 @@ INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000044, 'Mu
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000045, 'Brand',		'Agencia22', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000046, 'Ms. Hanley',	'Agencia23', NULL);
 
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000056, 'Jack Sparrow',	'Agencia24', 	'Capitao');
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000057, 'Angelica',	'Agencia25', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000058, 'Barbossa',	'Agencia26', 		NULL);
+
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000065, 'Owen',	'Agencia27', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000066, 'Claire',	'Agencia28', 		'Ruiva');
+
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000075, 'Buscape',			'Agencia28', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000076, 'Ze pequeno',		'Agencia28', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000077, 'Bene',			'Agencia28', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000078, 'Mane Galinha',	'Agencia28', 		NULL);
+INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000079, 'Angelica',		'Agencia28', 		NULL);
+
+
 --INSERINDO EDITORES
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (33333333333,	1,	'IMAGEM',	12);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (88888888888,	0,	'SOM',		4);
@@ -194,6 +250,15 @@ INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUE
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000034,	0,	'SOM',		11);
 
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000041,	0,	'IMAGEM',	17);
+
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000054,	2,	'IMAGEM',	20);
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000055,	0,	'SOM',		13);
+
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000063,	0,	'IMAGEM',	7);
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000064,	2,	'SOM',		9);
+
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000073,	0,	'IMAGEM',	5);
+INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000074,	0,	'SOM',		9);
 
 --INSERINDO DIRETORES
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (11111111111, 'O Hobbit', 5, 'GERAL', 	13, 	  NULL);
@@ -223,6 +288,22 @@ INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_film
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000048, 'Interestelar', 3, 'DESIGN', 			14, 	00000000047);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000049, 'Interestelar', 2, 'MUSICAL', 			11, 	00000000047);
 
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000051, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 1, 'GERAL', 			10, 	NULL);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000052, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 0, 'MAQUIAGEM', 			9, 	00000000051);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000053, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 5, 'DESIGN', 			14, 	00000000051);
+
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000059, 'Jurassic World: O Mundo dos Dinossauros', 2, 'GERAL', 			4, 	NULL);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000060, 'Jurassic World: O Mundo dos Dinossauros', 0, 'DESIGN', 		8, 	00000000051);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000061, 'Jurassic World: O Mundo dos Dinossauros', 5, 'MUSICAL', 		11, 	00000000051);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000062, 'Jurassic World: O Mundo dos Dinossauros', 1, 'MAQUIAGEM', 		14, 	00000000051);
+
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000067, 'Cidade de Deus', 2, 'GERAL', 		9, 	NULL);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000068, 'Cidade de Deus', 0, 'CINEMATOGRAFIA', 		4, 	00000000067);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000069, 'Cidade de Deus', 0, 'MAQUIAGEM', 		1, 		00000000067);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000070, 'Cidade de Deus', 0, 'DESIGN', 		2, 			00000000067);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000071, 'Cidade de Deus', 2, 'ARTE', 		4, 			00000000067);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000072, 'Cidade de Deus', 1, 'EDICAO', 		7, 			00000000067);
+
 --INSERINDO AMBIENTE DE GRAVACAO
 INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set 1 - hobbit', 100, 93012034, 'Galpao 2');
 
@@ -242,10 +323,187 @@ INSERT INTO camera (tomb, modelo, fabricante) VALUES ();
 INSERT INTO lentes (tomb, lente) VALUES ();
 
 --INSERINDO TELEFONE DOS FUNCIONARIOS
-INSERT INTO telefone_func (cpf, fone) VALUES ();
+INSERT INTO telefone_func (cpf, fone) VALUES (11111111111, 081191811211);
+INSERT INTO telefone_func (cpf, fone) VALUES (22222222222, 081292822222);
+INSERT INTO telefone_func (cpf, fone) VALUES (33333333333, 081393833233);
+INSERT INTO telefone_func (cpf, fone) VALUES (44444444444, 081494844244);
+INSERT INTO telefone_func (cpf, fone) VALUES (55555555555, 081595855255);
+INSERT INTO telefone_func (cpf, fone) VALUES (66666666666, 081696866266);
+INSERT INTO telefone_func (cpf, fone) VALUES (77777777777, 081797877277);
+INSERT INTO telefone_func (cpf, fone) VALUES (88888888888, 081898888288);
+INSERT INTO telefone_func (cpf, fone) VALUES (99999999999, 081999899299);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000001, 081991817219);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000002, 081992827229);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000003, 081993837239);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000004, 081994847249);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000005, 081995857259);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000006, 081996867269);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000007, 081997877279);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000008, 081998887289);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000009, 081999897299);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000010, 081991047210);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000011, 081991147211);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000012, 081991247212);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000013, 081991347213);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000014, 081991447214);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000015, 081991547215);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000016, 081991647216);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000017, 081991747217);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000018, 081991847218);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000019, 081991947219);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000020, 081992047220);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000021, 081992147221);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000022, 081992247222);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000023, 081992347223);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000024, 081992447224);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000025, 081992547225);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000026, 081992647226);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000027, 081992747227);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000028, 081992847228);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000029, 081992947229);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000030, 081993047230);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000031, 081993147231);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000032, 081993247232);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000033, 081993347233);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000034, 081993447234);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000035, 081993547235);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000036, 081993647236);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000037, 081993747237);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000038, 081993847238);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000039, 081993947239);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000040, 081994047240);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000041, 081994147241);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000042, 081994247242);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000043, 081994347243);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000044, 081994447244);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000045, 081994547245);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000046, 081994647246);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000047, 081994747247);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000048, 081994847248);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000049, 081994947249);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000050, 081995047250);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000051, 081995147251);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000052, 081995247252);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000053, 081995347253);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000054, 081995447254);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000055, 081995547255);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000056, 081995647256);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000057, 081995747257);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000058, 081995847258);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000059, 081995947259);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000060, 081996047260);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000061, 081996147261);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000062, 081996247262);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000063, 081996347263);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000064, 081996447264);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000065, 081996547265);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000066, 081996647266);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000067, 081996747267);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000068, 081996847268);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000069, 081996947269);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000070, 081997047270);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000071, 081997147271);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000072, 081997247272);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000073, 081997347273);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000074, 081997447274);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000075, 081997547275);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000076, 081997647276);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000077, 081997747277);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000078, 081997847278);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000079, 081997843579);
+INSERT INTO telefone_func (cpf, fone) VALUES (00000000080, 081997843580);
 
 --INSERINDO EMAIL DE FUNCIONARIOS
-INSERT INTO email_func (cpf, email) VALUES ();
+INSERT INTO email_func (cpf, email) VALUES (11111111111,'Peter@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (22222222222,'Ian@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (33333333333,'Jabez@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (44444444444,'Martin@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (55555555555,'Evangeline@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (66666666666,'Andy@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (77777777777,'Mykyta@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (88888888888,'Duane@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (99999999999,'Christopher@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000001,'Christian@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000002,'Heath@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000003,'Maggie@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000004,'Masayuki@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000005,'Michiyuki@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000006,'Ritchie@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000007,'David@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000008,'Brad@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000009,'Edward@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000010,'Meat@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000011,'Chuck@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000012,'Marc@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000013,'Alvin@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000014,'James@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000015,'Steve@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000016,'Andrew@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000017,'Emma@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000018,'Ron@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000019,'David@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000020,'Akiva@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000021,'Tom@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000022,'Ewan@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000023,'Ayelet@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000024,'Dan@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000025,'John@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000026,'William@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000027,'Joseph@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000028,'Ivan@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000029,'Drew@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000030,'Lucy@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000031,'Cameron@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000032,'Demi@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000033,'Ed@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000034,'Jenno@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000035,'Gareth@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000036,'Max@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000037,'Elizabeth@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000038,'Bryan@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000039,'Dave@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000040,'Martin@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000041,'Bob@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000042,'Ellen@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000043,'Matthew@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000044,'Mackenzie@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000045,'Anne@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000046,'Collette@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000047,'Jonathan@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000048,'Stacey@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000049,'Luisa@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000050,'Mary@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000051,'Rob@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000052,'Chad@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000053,'Terry@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000054,'Ted@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000055,'Terry@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000056,'Johnny@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000057,'Penelope@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000058,'Geoffrey@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000059,'Colin@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000060,'Rick@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000061,'Amanda@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000062,'Carla@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000063,'Laura@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000064,'Chloe@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000065,'Chris@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000066,'Bryce@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000067,'Fernando@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000068,'Katia@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000069,'Paulo@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000070,'Ed@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000071,'Cesar@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000072,'Daniel@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000073,'Donna@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000074,'Malu@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000075,'Alexandre@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000076,'Leandro@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000077,'Phellipe@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000078,'Douglas@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000079,'Alice@produtora.com.br');
+INSERT INTO email_func (cpf, email) VALUES (00000000080,'Rhys@produtora.com.br');
+
 
 --INSERINDO CONTRATOS
 INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES ();

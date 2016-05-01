@@ -157,7 +157,7 @@ CREATE TABLE telefone_func(
 );
 CREATE TABLE email_func(
 	cpf NUMBER,
-	email VARCHAR2(20),
+	email VARCHAR2(50),
 	CONSTRAINT email_func_pk PRIMARY KEY (cpf,email),
 	CONSTRAINT email_func_fk FOREIGN KEY (cpf) REFERENCES funcionario(cpf)
 );

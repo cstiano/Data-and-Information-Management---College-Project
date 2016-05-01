@@ -35,6 +35,26 @@ INSERT INTO ceps (cep,rua) VALUES (00000019, 'Rua do Brad');
 INSERT INTO ceps (cep,rua) VALUES (00000020, 'Rua de Deus');
 INSERT INTO ceps (cep,rua) VALUES (00000021, 'Rua do Dadinho');
 INSERT INTO ceps (cep,rua) VALUES (00000022, 'Rua da Alice');
+INSERT INTO ceps (cep,rua) VALUES (00000023, 'Rua do Set_1');
+INSERT INTO ceps (cep,rua) VALUES (00000024, 'Rua do Set_2');
+INSERT INTO ceps (cep,rua) VALUES (00000025, 'Rua do Set_3');
+INSERT INTO ceps (cep,rua) VALUES (00000026, 'Rua do Set_4');
+INSERT INTO ceps (cep,rua) VALUES (00000027, 'Rua do Set_5');
+INSERT INTO ceps (cep,rua) VALUES (00000028, 'Rua do Set_6');
+INSERT INTO ceps (cep,rua) VALUES (00000029, 'Rua do Set_7');
+INSERT INTO ceps (cep,rua) VALUES (00000030, 'Rua do Set_8');
+INSERT INTO ceps (cep,rua) VALUES (00000031, 'Rua do Set_9');
+INSERT INTO ceps (cep,rua) VALUES (00000032, 'Rua do Set_10');
+INSERT INTO ceps (cep,rua) VALUES (00000033, 'Rua do Set_11');
+INSERT INTO ceps (cep,rua) VALUES (00000034, 'Rua do Set_12');
+INSERT INTO ceps (cep,rua) VALUES (00000035, 'Rua do Set_13');
+INSERT INTO ceps (cep,rua) VALUES (00000036, 'Rua do Set_14');
+INSERT INTO ceps (cep,rua) VALUES (00000037, 'Rua do Set_15');
+INSERT INTO ceps (cep,rua) VALUES (00000038, 'Rua do Set_16');
+INSERT INTO ceps (cep,rua) VALUES (00000039, 'Rua do Set_17');
+INSERT INTO ceps (cep,rua) VALUES (00000040, 'Rua do Set_18');
+INSERT INTO ceps (cep,rua) VALUES (00000041, 'Rua do Set_19');
+INSERT INTO ceps (cep,rua) VALUES (00000042, 'Rua do Set_20');
 
 
 --INSERINDO PRODUTORAS
@@ -306,7 +326,26 @@ INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_film
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000072, 'Cidade de Deus', 1, 'EDICAO', 		7, 			00000000067);
 
 --INSERINDO AMBIENTE DE GRAVACAO
-INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set 1', 100, 93012034, 'Galpao 2');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_1', 986, 00000023, 'Galpao29');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_2', 1015, 00000024, 'Galpao73');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_3', 435, 00000025, 'Galpao24');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_4', 592, 00000026, 'Galpao56');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_5', 521, 00000027, 'Galpao70');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_6', 127, 00000028, 'Galpao42');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_7', 159, 00000029, 'Galpao6');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_8', 1026, 00000030, 'Galpao96');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_9', 526, 00000031, 'Galpao43');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_10', 836, 00000032, 'Galpao80');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_11', 468, 00000033, 'Galpao99');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_12', 529, 00000034, 'Galpao61');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_13', 630, 00000035, 'Galpao27');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_14', 223, 00000036, 'Galpao45');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_15', 235, 00000037, 'Galpao92');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_16', 902, 00000038, 'Galpao33');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_17', 158, 00000039, 'Galpao55');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_18', 267, 00000040, 'Galpao96');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_19', 556, 00000041, 'Galpao74');
+INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_20', 142, 00000042, 'Galpao14');
 
 --INSERINDO EQUIPAMENTOS
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (1, 'Equipamento1', 31886.00, '4 anos');
@@ -391,7 +430,34 @@ INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (79, 'Eq
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (80, 'Equipamento80', 44555.00, '2 anos');
 
 --INSERINDO CENARIOS
-INSERT INTO cenario (tomb,tema,material,tamanho) VALUES ();
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (41, 'Acao', 'Bloco', 483);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (42, 'Animacao', 'Bloco', 877);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (43, 'Aventura', 'Bloco', 893);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (44, 'Chanchada', 'Pedra', 486);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (45, 'Cinema catastrofe', 'Madeira', 749);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (46, 'Comedia', 'Vidro', 462);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (47, 'Comedia romantica', 'Bloco', 790);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (48, 'Comedia dramatica', 'Vidro', 863);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (49, 'Comedia de acao', 'Cimento', 640);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (50, 'Cult', 'Madeira', 272);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (51, 'Danca', 'Papel', 311);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (52, 'Documentarios', 'Tijolo', 667);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (53, 'Drama', 'Papel', 882);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (54, 'Espionagem', 'Vidro', 962);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (55, 'Fantasia', 'Madeira', 167);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (56, 'Faroeste', 'Cimento', 1029);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (57, 'Ficcao cientifica', 'Pedra', 122);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (58, 'Guerra', 'Pedra', 169);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (59, 'Machinima', 'Bloco', 493);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (60, 'Masala', 'Bloco', 111);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (61, 'Musical', 'Cimento', 329);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (62, 'Filme noir', 'Areia', 521);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (63, 'Policial', 'Vidro', 884);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (64, 'Romance', 'Areia', 298);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (65, 'Suspense', 'Pedra', 415);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (66, 'Terror', 'Madeira', 513);
+INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (67, 'Trash', 'Papel', 191);
+
 
 --INSERINDO COMPUTADORES
 INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (1,  33333333333, 'intel i8 877 quad core', '8 GB', '2 TB');
@@ -655,17 +721,104 @@ INSERT INTO email_func (cpf, email) VALUES (00000000076,'Leandro@produtora.com.b
 INSERT INTO email_func (cpf, email) VALUES (00000000077,'Phellipe@produtora.com.br');
 INSERT INTO email_func (cpf, email) VALUES (00000000078,'Douglas@produtora.com.br');
 INSERT INTO email_func (cpf, email) VALUES (00000000079,'Alice@produtora.com.br');
-INSERT INTO email_func (cpf, email) VALUES (00000000080,'Rhys@produtora.com.br');
-
+INSERT INTO email_func (cpf, email) VALUES (00000000080,'chcp@produtora.com.br');
 
 --INSERINDO CONTRATOS
-INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES ();
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (11111111111, 1, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (22222222222, 2, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (33333333333, 3, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (44444444444, 4, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (55555555555, 5, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (66666666666, 6, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (77777777777, 7, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (88888888888, 8, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (99999999999, 9, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000001, 10, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000002, 11, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000003, 12, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000004, 13, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000005, 14, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000006, 15, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000007, 16, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000008, 17, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000009, 18, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000010, 19, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000011, 20, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000012, 21, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000013, 22, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000014, 23, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000015, 24, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000016, 25, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000017, 26, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000018, 27, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000019, 28, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000020, 29, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000021, 30, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000022, 31, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000023, 32, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000024, 33, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000025, 34, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000026, 35, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000027, 36, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000028, 37, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000029, 38, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000030, 39, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000031, 40, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000032, 41, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000033, 42, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000034, 43, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000035, 44, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000036, 45, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000037, 46, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000038, 47, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000039, 48, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000040, 49, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000041, 50, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000042, 51, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000043, 52, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000044, 53, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2011'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000045, 54, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000046, 55, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000047, 56, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000048, 57, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000049, 58, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000050, 59, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000051, 60, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000052, 61, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000053, 62, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000054, 63, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000055, 64, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000056, 65, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000057, 66, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000058, 67, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000059, 68, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000060, 69, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2014'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000061, 70, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000062, 71, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000063, 72, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000064, 73, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000065, 74, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2010'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000066, 75, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000067, 76, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000068, 77, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000069, 78, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000070, 79, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000071, 80, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000072, 81, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2017'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000073, 82, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000074, 83, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000075, 84, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000076, 85, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2015'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000077, 86, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2013'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000078, 87, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2016'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000079, 88, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
+INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000080, 89, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
 
 --INSERINDO MONTAGENS
-INSERT INTO monta (cpf, nome_filme) VALUES ();
+-- INSERT INTO monta (cpf, nome_filme) VALUES ();
 
---INSERINDO REVISOES
-INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES ();
+-- --INSERINDO REVISOES
+-- INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES ();
 
---INSERINDO EQUIPAMENTOS ADQUIRIDOS POR FILMES
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ();
+-- --INSERINDO EQUIPAMENTOS ADQUIRIDOS POR FILMES
+-- INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ();

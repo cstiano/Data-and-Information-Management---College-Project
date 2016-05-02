@@ -43,3 +43,8 @@ FROM filme FULL OUTER JOIN diretor
 ON filme.nome_filme = diretor.nome_filme_dirigido;
 
 --30. Uma subconsulta com ​uso de ANY ou SOME
+SELECT funcionario.nome, diretor.atuacao
+FROM funcionario, diretor
+WHERE funcionario.cpf = diretor.cpf and diretor.atuacao <> 'GERAL'
+and diretor.quant_premiacoes > SOME(SELECT quant_premiacoes FROM diretor WHERE atuacao = 'GERAL')
+ORDER BY funcionario.nome;

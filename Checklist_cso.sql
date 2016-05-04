@@ -82,16 +82,77 @@ END;
 /
 
 --63. Procedimento sem ​parâmetro
+CREATE OR REPLACE PROCEDURE print_ruas IS 
+	v_rua ceps%ROWTYPE;
+BEGIN
+	FOR v_rua IN (SELECT * FROM ceps)
+	LOOP
+		dbms_output.put_line(v_rua.cep||' -----> '||v_rua.rua);
+	END LOOP;
+	COMMIT;
+END print_ruas;
+/
 
 --64. Procedimento com ​parâmetro IN
+CREATE OR REPLACE PROCEDURE insere_produtora(
+	p_nome produtora.nome%TYPE, 
+	p_cnpj produtora.cnpj%TYPE,
+	p_cep produtora.cep%TYPE,
+	p_complemento produtora.complemento%TYPE
+	) IS 
+	pro_cmp produtora.cnpj%TYPE;
+	cep_cmp ceps.cep%TYPE;
+	BEGIN
+		SELECT cnpj INTO pro_cmp FROM produtora WHERE cnpj = p_cnpj;
+		IF SQL%FOUND THEN
+			dbms_output.put_line('Produtora ja existe no banco:  ' || pro_cmp);
+		END IF;
+		EXCEPTION 
+			WHEN NO_DATA_FOUND THEN
+			INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (p_cnpj,p_nome,p_cep,p_complemento);
+			dbms_output.put_line('Produtora ' || p_nome ||' inserida com sucesso');
+		COMMIT; 
+	END insere_produtora;
+/
 
 --65. Procedimento com ​parâmetro OUT
+CREATE OR REPLACE PROCEDURE diretor_bem_pago(
+	dir_nome OUT funcionario.nome%TYPE,
+	dir_cpf OUT funcionario.cpf%TYPE
+	) IS 
+	d_nome funcionario.nome%TYPE;
+	BEGIN
+		SELECT funcionario.nome, funcionario.cpf INTO dir_nome, dir_cpf FROM diretor, funcionario WHERE diretor.cpf = funcionario.cpf
+		and salario = (SELECT max(salario) FROM funcionario);
+	END diretor_bem_pago;
+/
 
 --66. Procedimento com ​parâmetro INOUT
+CREATE OR REPLACE PROCEDURE atualizacao_salario(
+	d_cpf funcionario.cpf%TYPE,
+	at_salario IN OUT funcionario.cep%TYPE
+	) AS
+	BEGIN
+		at_salario := at_salario + at_salario*0.5; 
+		UPDATE funcionario SET funcionario.salario = at_salario WHERE funcionario.cpf = d_cpf;
+	END atualizacao_salario;
+/
 
 --67. Uso de procedimento dentro de outro bloco PL ​(pode­se usar um dos procedimentos criados anteriormente)
+DECLARE
+	dir funcionario%ROWTYPE; 
+BEGIN	
+	diretor_bem_pago(dir.nome,dir.cpf);
+	dbms_output.put_line('Diretor com maior salario: '||dir.nome);
+	SELECT salario INTO dir.salario FROM funcionario WHERE funcionario.cpf = dir.cpf;
+	dbms_output.put_line('Salario atual: '|| dir.salario);
+	atualizacao_salario(dir.cpf, dir.salario);
+	dbms_output.put_line('Salario atualizado: '|| dir.salario);
+END;
+/
 
-	SET serveroutput ON;
+--- outro
+SET serveroutput ON;
 DECLARE 
 	v_media funcionario.salario%TYPE;
 	v_novo_salario funcionario.salario%TYPE;
@@ -108,19 +169,43 @@ BEGIN
 END;
 /
 
-	SET serveroutput ON;
-DECLARE 
-	CURSOR dir IS(SELECT * FROM diretor);
-	ind diretor%ROWTYPE;
-	func funcionario.nome%TYPE;
+CREATE OR REPLACE PROCEDURE print_ruas IS 
+	v_rua ceps%ROWTYPE;
 BEGIN
-	OPEN dir;
+	FOR v_rua IN (SELECT * FROM ceps)
 	LOOP
-		FETCH dir INTO ind;
-		EXIT WHEN dir%NOTFOUND;
-		SELECT funcionario.nome INTO func FROM funcionario, diretor WHERE funcionario.cpf = ind.cpf; 
-		dbms_output.put_line('Func:  ' || func); 
+		dbms_output.put_line(v_rua.cep||' -----> '||v_rua.rua);
 	END LOOP;
-	CLOSE dir;
+	COMMIT;
+END print_ruas;
+
+
+SET serveroutput ON;
+
+DECLARE
+	PROCEDURE print_ruas IS 
+		v_rua ceps%ROWTYPE;
+	BEGIN
+		FOR v_rua IN (SELECT * FROM ceps)
+		LOOP
+		dbms_output.put_line(v_rua.cep||' -----> '||v_rua.rua);
+		END LOOP;
+	END print_ruas;
+BEGIN
+	print_ruas;
+END;
+/
+
+BEGIN
+	insere_produtora('alksjda', 11111111111111, 919291, 'arrocha');
+END;
+/
+
+DECLARE
+	dir funcionario.nome%TYPE;
+	dir_cpfss funcionario.cpf%TYPE; 
+BEGIN	
+	diretor_bem_pago(dir,dir_cpfss);
+	dbms_output.put_line(dir|| '  ' || dir_cpfss);
 END;
 /

@@ -1,3 +1,4 @@
+
 --INSERINDO CEPS
 INSERT INTO ceps (cep,rua) VALUES (11111111, 'Rua da Sony');
 INSERT INTO ceps (cep,rua) VALUES (22222222, 'Rua da Warner');
@@ -12,7 +13,7 @@ INSERT INTO ceps (cep,rua) VALUES (12345678, 'Rua do Hobbit');
 INSERT INTO ceps (cep,rua) VALUES (23456789, 'Rua do Batman');
 INSERT INTO ceps (cep,rua) VALUES (01923884, 'Rua do Bale');
 INSERT INTO ceps (cep,rua) VALUES (21236213, 'Rua do Coringa');
-INSERT INTO ceps (cep,rua) VALUES (23256789, 'Rua da Maggie');
+INSERT INTO ceps (cep,rua) VALUES (22456789, 'Rua da Maggie');
 INSERT INTO ceps (cep,rua) VALUES (00000001, 'Rua da Luta');
 INSERT INTO ceps (cep,rua) VALUES (00000002, 'Rua do Pit');
 INSERT INTO ceps (cep,rua) VALUES (00000003, 'Rua do Norton');
@@ -56,7 +57,6 @@ INSERT INTO ceps (cep,rua) VALUES (00000040, 'Rua do Set_18');
 INSERT INTO ceps (cep,rua) VALUES (00000041, 'Rua do Set_19');
 INSERT INTO ceps (cep,rua) VALUES (00000042, 'Rua do Set_20');
 
-
 --INSERINDO PRODUTORAS
 INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (11111111111111, 'Sony Pictures Entertainment', 		11111111, NULL);
 INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (22222222222222, 'Time Warner', 						22222222, NULL);
@@ -68,6 +68,7 @@ INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (77777777777777, 'The W
 INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (88888888888888, 'MGM - Metro Goldwyn Mayer', 			88888888, NULL);
 INSERT INTO produtora (cnpj,nome,cep,complemento) VALUES (99999999999999, 'Globo Filmes', 						99999999, NULL);
 
+
 --INSERINDO FUNCIONARIOS
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (11111111111, 88888888888888, 'Peter Jackson', 		12345678, 'n 100, apto 200', to_date('31/10/1961', 'dd/mm/yy'), 'M', 299383.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (22222222222, 88888888888888, 'Ian McKellen', 		12345678, 'n 100, apto 100', to_date('25/05/1939', 'dd/mm/yy'), 'M', 940886.00);
@@ -77,28 +78,24 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (66666666666, 88888888888888, 'Andy McLaren', 		12345678, 'n 100, apto 104', to_date('03/08/1975', 'dd/mm/yy'), 'M', 248335.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (77777777777, 88888888888888, 'Mykyta Brazhnyk', 		12345678, 'n 100, apto 105', to_date('12/06/1972', 'dd/mm/yy'), 'F', 895386.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (88888888888, 88888888888888, 'Duane Agate', 		12345678, 'n 100, apto 106', to_date('11/06/1976', 'dd/mm/yy'), 'M', 770492.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (99999999999, 22222222222222, 'Christopher Nolan', 	23456789, 'n 200, apto 101', to_date('30/07/1970', 'dd/mm/yy'), 'M', 651421.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000001, 22222222222222, 'Christian Bale', 		01923884, 'n 200, apto 106', to_date('30/01/1974', 'dd/mm/yy'), 'M', 212362.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000002, 22222222222222, 'Heath Ledger', 		21236213, 'n 200, apto 106', to_date('04/04/1979', 'dd/mm/yy'), 'M', 500027.00);
-INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000003, 22222222222222, 'Maggie Gyllenhaal', 	23256789, 'n 200, apto 106', to_date('16/11/1977', 'dd/mm/yy'), 'F', 378690.00);
+INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000003, 22222222222222, 'Maggie Gyllenhaal', 	22456789, 'n 200, apto 106', to_date('16/11/1977', 'dd/mm/yy'), 'F', 378690.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000004, 22222222222222, 'Masayuki Nakano', 		23456789, 'n 200, apto 102', to_date('30/07/1970', 'dd/mm/yy'), 'M', 530059.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000005, 22222222222222, 'Michiyuki Kawashima', 	23456789, 'n 200, apto 103', to_date('30/07/1970', 'dd/mm/yy'), 'M', 907763.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000006, 22222222222222, 'Ritchie Coster', 		23456789, 'n 200, apto 104', to_date('30/07/1970', 'dd/mm/yy'), 'M', 523926.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000007, 55555555555555, 'David Fincher', 		00000001, 'n 222, apto 100', to_date('28/07/1962', 'dd/mm/yy'), 'M', 393426.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000008, 55555555555555, 'Brad Pitt', 		00000002, 'n 182, apto 104', to_date('18/12/1963', 'dd/mm/yy'), 'M', 99172.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000009, 55555555555555, 'Edward Norton', 		00000003, 'n 182, apto 101', to_date('18/08/1969', 'dd/mm/yy'), 'M', 465736.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000010, 55555555555555, 'Meat Loaf', 		00000001, 'n 182, apto 102', to_date('27/09/1947', 'dd/mm/yy'), 'M', 15211.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000011, 55555555555555, 'Chuck Palahniuk', 		00000001, 'n 182, apto 103', to_date('21/02/1962', 'dd/mm/yy'), 'M', 605368.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000012, 11111111111111, 'Marc Webb', 		00000004, 'n 1241', to_date('31/08/1974', 'dd/mm/yy'), 'M', 966429.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000013, 11111111111111, 'Alvin Sargent', 		00000004, 'n 1231', to_date('12/04/1973', 'dd/mm/yy'), 'M', 475782.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000014, 11111111111111, 'James Vanderbilt', 	00000004, 'n 2135', to_date('24/07/1970', 'dd/mm/yy'), 'M', 31530.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000015, 11111111111111, 'Steve Kloves ', 		00000004, 'n 1234', to_date('26/05/1962', 'dd/mm/yy'), 'M', 732862.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000016, 11111111111111, 'Andrew Garfield', 		00000004, 'n 1242', to_date('20/08/1983', 'dd/mm/yy'), 'M', 675123.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000017, 11111111111111, 'Emma Stone', 		00000004, 'n 1235', to_date('06/11/1988', 'dd/mm/yy'), 'F', 184067.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000018, 11111111111111, 'Ron Howard', 		00000005, 'n 1236', to_date('01/03/1954', 'dd/mm/yy'), 'M', 523929.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000019, 11111111111111, 'David Koepp', 		00000006, 'n 1312', to_date('09/06/1963', 'dd/mm/yy'), 'M', 989802.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000020, 11111111111111, 'Akiva Goldsman', 		00000004, 'n 1671', to_date('07/07/1962', 'dd/mm/yy'), 'F', 644022.00);
@@ -108,7 +105,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000024, 11111111111111, 'Dan Brown', 		00000006, 'n 1285', to_date('22/06/1964', 'dd/mm/yy'), 'M', 971393.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000025, 11111111111111, 'John Calley', 		00000007, 'n 1764', to_date('13/09/1930', 'dd/mm/yy'), 'M', 28456.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000026, 11111111111111, 'William M. Connor', 	00000005, 'n 1523', to_date('25/04/1967', 'dd/mm/yy'), 'M', 185011.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000027, 11111111111111, 'Joseph McGinty Nichol', 	00000008, 'n 1872', to_date('09/08/1968', 'dd/mm/yy'), 'M', 186229.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000028, 11111111111111, 'Ivan Goff', 		00000008, 'n 1822', to_date('25/04/1967', 'dd/mm/yy'), 'M', 387373.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000029, 11111111111111, 'Drew Barrymore', 		00000003, 'n 1897', to_date('22/02/1975', 'dd/mm/yy'), 'F', 494421.00);
@@ -117,7 +113,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000032, 11111111111111, 'Demi Moore', 		00000009, 'n 1611', to_date('11/11/1962', 'dd/mm/yy'), 'F', 908537.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000033, 11111111111111, 'Ed Shearmur', 		00000010, 'n 1831', to_date('28/02/1966', 'dd/mm/yy'), 'M', 585198.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000034, 11111111111111, 'Jenno Topping', 		00000011, 'n 1773', to_date('12/06/1967', 'dd/mm/yy'), 'M', 604324.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000035, 22222222222222, 'Gareth Edwards', 		00000012, 'n 102, apto 123', to_date('23/01/1980', 'dd/mm/yy'), 'M', 674370.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000036, 22222222222222, 'Max Borenstein', 		00000012, 'n 102, apto 106', to_date('16/11/1977', 'dd/mm/yy'), 'M', 576413.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000037, 22222222222222, 'Elizabeth Olsen', 		00000012, 'n 102, apto 201', to_date('16/02/1989', 'dd/mm/yy'), 'F', 813526.00);
@@ -125,7 +120,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000039, 22222222222222, 'Dave Callaham', 		00000012, 'n 212', 			 to_date('24/10/1977', 'dd/mm/yy'), 'M', 278980.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000040, 22222222222222, 'Martin Cohen', 		00000012, 'n 241', 			 to_date('02/05/1979', 'dd/mm/yy'), 'M', 769956.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000041, 22222222222222, 'Bob Ducsay', 		00000012, 'n 204', 			 to_date('16/12/1971', 'dd/mm/yy'), 'M', 251873.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000042, 66666666666666, 'Ellen Burstyn', 		00000013, 'n 201', to_date('07/12/1932', 'dd/mm/yy'), 'F', 1009170.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000043, 66666666666666, 'Matthew McConaughey', 	00000013, 'n 202', to_date('04/11/1969', 'dd/mm/yy'), 'M', 916996.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000044, 66666666666666, 'Mackenzie Foy', 		00000013, 'n 203', to_date('10/11/2000', 'dd/mm/yy'), 'F', 507281.00);
@@ -135,7 +129,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000048, 66666666666666, 'Stacey Douglas', 		00000013, 'n 207', to_date('16/12/1971', 'dd/mm/yy'), 'M', 346327.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000049, 66666666666666, 'Luisa Abel',		 00000013, 'n 208', to_date('03/10/1976', 'dd/mm/yy'), 'F', 670336.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000050, 66666666666666, 'Mary Zophres',	 	00000013, 'n 209', to_date('23/03/1964', 'dd/mm/yy'), 'F', 136505.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000051, 33333333333333, 'Rob Marshall',	 	00000014, 'n 301', to_date('17/10/1960', 'dd/mm/yy'), 'M', 631729.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000052, 33333333333333, 'Chad Oman',		 00000014, 'n 302', to_date('15/05/1965', 'dd/mm/yy'), 'M', 671313.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000053, 33333333333333, 'Terry Rossio',	 	00000014, 'n 303', to_date('02/06/1960', 'dd/mm/yy'), 'M', 935857.00);
@@ -144,7 +137,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000056, 33333333333333, 'Johnny Depp',	 	00000015, 'n 403', to_date('09/06/1963', 'dd/mm/yy'), 'M', 829582.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000057, 33333333333333, 'Penelope Cruz',	 	00000016, 'n 209', to_date('28/04/1974', 'dd/mm/yy'), 'F', 110545.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000058, 33333333333333, 'Geoffrey Rush',	 	00000016, 'n 210', to_date('06/07/1951', 'dd/mm/yy'), 'M', 908814.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000059, 44444444444444, 'Colin Trevorrow',	 	00000017, 'n 211', to_date('13/09/1976', 'dd/mm/yy'), 'M', 525434.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000060, 44444444444444, 'Rick Jaffa',		 00000017, 'n 212', to_date('06/06/1989', 'dd/mm/yy'), 'M', 1000364.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000061, 44444444444444, 'Amanda Silver',	 	00000017, 'n 213', to_date('29/07/1989', 'dd/mm/yy'), 'F', 354043.00);
@@ -153,7 +145,6 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000064, 44444444444444, 'Chloe Perrin',	 	00000018,  'n 91', to_date('12/10/1980', 'dd/mm/yy'), 'F', 436808.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000065, 44444444444444, 'Chris Pratt',	 	00000019, 'n 331', to_date('21/07/1979', 'dd/mm/yy'), 'M', 127276.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000066, 44444444444444, 'Bryce Dallas Howard',	00000019, 'n 333', to_date('02/03/1981', 'dd/mm/yy'), 'F', 957178.00);
-
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000067, 99999999999999, 'Fernando Meirelles',	00000020, 'n 321', to_date('09/11/1955', 'dd/mm/yy'), 'M', 403584.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000068, 99999999999999, 'Katia Lund',		00000020, 'n 322', to_date('12/03/1966', 'dd/mm/yy'), 'F', 715403.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000069, 99999999999999, 'Paulo Lins',		00000020, 'n 323', to_date('09/10/1958', 'dd/mm/yy'), 'M', 512651.00);
@@ -168,6 +159,7 @@ INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, sa
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000078, 99999999999999, 'Douglas Silva',		00000022, 'n 900', to_date('21/06/1988', 'dd/mm/yy'), 'M', 646226.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000079, 99999999999999, 'Alice Braga',		00000022, 'n 891', to_date('15/04/1983', 'dd/mm/yy'), 'F', 708586.00);
 INSERT INTO funcionario (cpf,cnpj_c,nome,cep,complemento,dt_nascimento, sexo, salario) VALUES (00000000080, 11111111111111, 'Rhys Ifans', 		00000004, 'n 1236', to_date('22/07/1967', 'dd/mm/yy'), 'M', 358094.00);
+
 
 --INSERINDO TELEFONES PRODUTORA
 INSERT INTO prod_fone (cnpj,fone) VALUES (11111111111111, 081981621412);
@@ -190,10 +182,11 @@ INSERT INTO prod_fone (cnpj,fone) VALUES (88888888888888, 082331294172);
 INSERT INTO prod_fone (cnpj,fone) VALUES (99999999999999, 082331213442);
 INSERT INTO prod_fone (cnpj,fone) VALUES (99999999999999, 081234333332);
 
+
 --INSERINDO FILMES
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('O Hobbit',												88888888888888,to_date('02/11/2001', 'dd/mm/yy'), 50000000.00,	to_date('02/11/2000', 'dd/mm/yy'));
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('Batman: O cavaleiro das trevas',							22222222222222,to_date('02/11/2008', 'dd/mm/yy'), 35000000.00,	to_date('18/07/2007', 'dd/mm/yy'));
-INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('CLube da Luta',											55555555555555,to_date('12/11/1999', 'dd/mm/yy'), 1500000.00,	to_date('01/03/1997', 'dd/mm/yy'));
+INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('Clube da Luta',											55555555555555,to_date('12/11/1999', 'dd/mm/yy'), 1500000.00,	to_date('01/03/1997', 'dd/mm/yy'));
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('A Origem',												22222222222222,to_date('23/03/2010', 'dd/mm/yy'), 5912814.00,	to_date('16/07/2008', 'dd/mm/yy'));
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('O espetacular Homem-Aranha',								11111111111111,to_date('22/04/2012', 'dd/mm/yy'), 62004688.00,	to_date('06/07/2010', 'dd/mm/yy'));
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('Anjos e Demonios',										11111111111111,to_date('12/06/2009', 'dd/mm/yy'), 150000000.00,	to_date('16/05/2007', 'dd/mm/yy'));
@@ -208,6 +201,7 @@ INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('Jurassic World: O Mundo dos Dinossauros', 				44444444444444,to_date('12/06/2015', 'dd/mm/yy'), 150000000.00,	to_date('02/01/2013', 'dd/mm/yy'));
 INSERT INTO filme (nome_filme,cnpj_prod,data_lan,faturamento,data_inicio) VALUES ('Cidade de Deus', 										99999999999999,to_date('30/08/2002', 'dd/mm/yy'), 3300000.00,	to_date('02/12/1999', 'dd/mm/yy'));
 
+
 --INSERINDO ATORES
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (22222222222, 'Gandalf',			'Agencia1', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (44444444444, 'Bilbo Baggins',	'Agencia2', NULL);
@@ -217,37 +211,29 @@ INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000002, 'Co
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000003, 'Rachel',			'Agencia8', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000008, 'Tyler Durden',	'Agencia9', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000009, 'The Narrator',	'Agencia10', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000016, 'Spider-Man',	'Agencia11', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000017, 'Gwen Stacy',	'Agencia11', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000080, 'The Lizard',	'Agencia13', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000021, 'Robert Langdon',	'Agencia16', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000022, 'Camerlengo',		'Agencia12', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000023, 'Vittoria Vetra',	'Agencia14', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000029, 'Natalie Cook',	'Agencia15', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000030, 'Dylan Sanders',	'Agencia16', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000031, 'Alex Munday',		'Agencia16', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000032, 'Madison Lee',		'Agencia17', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000037, 'Elle Brody',		'Agencia18', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000038, 'Young Ford',		'Agencia19', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000039, 'Joe Brody',		'Agencia20', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000042, 'Murph 2',		'Agencia21', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000043, 'Cooper',		'Agencia21', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000044, 'Murph 1',		'Agencia22', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000045, 'Brand',		'Agencia22', NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000046, 'Ms. Hanley',	'Agencia23', NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000056, 'Jack Sparrow',	'Agencia24', 	'Capitao');
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000057, 'Angelica',	'Agencia25', 		NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000058, 'Barbossa',	'Agencia26', 		NULL);
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000065, 'Owen',	'Agencia27', 		NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000066, 'Claire',	'Agencia28', 		'Ruiva');
-
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000075, 'Buscape',			'Agencia28', 		NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000076, 'Ze pequeno',		'Agencia28', 		NULL);
 INSERT INTO ator (cpf,personagem,agencia,carac_fisicas) VALUES (00000000077, 'Bene',			'Agencia28', 		NULL);
@@ -262,24 +248,21 @@ INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUE
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000010,	2,	'IMAGEM',	3);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000011,	8,	'SOM',		14);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000015,	1,	'IMAGEM',	10);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000024,	0,	'IMAGEM',	18);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000025,	4,	'IMAGEM',	23);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000026,	1,	'SOM',		20);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000033,	0,	'IMAGEM',	5);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000034,	0,	'SOM',		11);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000041,	0,	'IMAGEM',	17);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000054,	2,	'IMAGEM',	20);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000055,	0,	'SOM',		13);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000063,	0,	'IMAGEM',	7);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000064,	2,	'SOM',		9);
-
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000073,	0,	'IMAGEM',	5);
 INSERT INTO editor (cpf,quant_premiacoes,atuacao,quant_filmes_trabalhados) VALUES (00000000074,	0,	'SOM',		9);
+
+
+
 
 --INSERINDO DIRETORES
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (11111111111, 'O Hobbit', 5, 'GERAL', 	13, 	  NULL);
@@ -289,41 +272,35 @@ INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_film
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000005, 'Batman: O cavaleiro das trevas', 1, 'CINEMATOGRAFIA', 	12, 	  99999999999);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000006, 'Batman: O cavaleiro das trevas', 5, 'DESIGN', 			19, 	  99999999999);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000007, 'Clube da Luta', 5, 'GERAL', 		19, 	  NULL);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000012, 'O espetacular Homem-Aranha', 0, 'GERAL', 				6, 	  NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000013, 'O espetacular Homem-Aranha', 1, 'CINEMATOGRAFIA', 		2, 	  00000000012);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000014, 'O espetacular Homem-Aranha', 0, 'SOM', 				1, 	  00000000012);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000018, 'Anjos e Demonios', 3, 'GERAL', 		9, 	  	NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000019, 'Anjos e Demonios', 1, 'SOM', 			4, 	  	00000000018);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000020, 'Anjos e Demonios', 6, 'MUSICAL', 		10, 	00000000018);
-
-INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000020, 'As Panteras Detonando', 0, 'GERAL', 		14, 	NULL);
-INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000020, 'As Panteras Detonando', 0, 'MAQUIAGEM', 	5, 		00000000020);
-
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000021, 'As Panteras Detonando', 0, 'GERAL', 		14, 	NULL);
+INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000022, 'As Panteras Detonando', 0, 'MAQUIAGEM', 	5, 		00000000020);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000035, 'Godzilla', 0, 'GERAL', 			4, 			NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000036, 'Godzilla', 1, 'CINEMATOGRAFIA', 	12, 		00000000035);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000040, 'Godzilla', 1, 'DESIGN', 			15, 		00000000035);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000047, 'Interestelar', 5, 'GERAL', 			15, 		NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000048, 'Interestelar', 3, 'DESIGN', 			14, 	00000000047);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000049, 'Interestelar', 2, 'MUSICAL', 			11, 	00000000047);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000051, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 1, 'GERAL', 			10, 	NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000052, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 0, 'MAQUIAGEM', 			9, 	00000000051);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000053, 'Piratas do Caribe: Navegando em Aguas Misteriosaso', 5, 'DESIGN', 			14, 	00000000051);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000059, 'Jurassic World: O Mundo dos Dinossauros', 2, 'GERAL', 			4, 	NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000060, 'Jurassic World: O Mundo dos Dinossauros', 0, 'DESIGN', 		8, 	00000000051);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000061, 'Jurassic World: O Mundo dos Dinossauros', 5, 'MUSICAL', 		11, 	00000000051);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000062, 'Jurassic World: O Mundo dos Dinossauros', 1, 'MAQUIAGEM', 		14, 	00000000051);
-
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000067, 'Cidade de Deus', 2, 'GERAL', 		9, 	NULL);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000068, 'Cidade de Deus', 0, 'CINEMATOGRAFIA', 		4, 	00000000067);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000069, 'Cidade de Deus', 0, 'MAQUIAGEM', 		1, 		00000000067);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000070, 'Cidade de Deus', 0, 'DESIGN', 		2, 			00000000067);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000071, 'Cidade de Deus', 2, 'ARTE', 		4, 			00000000067);
 INSERT INTO diretor (cpf,nome_filme_dirigido,quant_premiacoes,atuacao,quant_filmes_trabalhados,cpf_supervisor) VALUES (00000000072, 'Cidade de Deus', 1, 'EDICAO', 		7, 			00000000067);
+
+
 
 --INSERINDO AMBIENTE DE GRAVACAO
 INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_1', 986, 00000023, 'Galpao29');
@@ -346,6 +323,8 @@ INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALU
 INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_18', 267, 00000040, 'Galpao96');
 INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_19', 556, 00000041, 'Galpao74');
 INSERT INTO ambiente_de_gravacao (nome_amb_grav, tamanho, cep, complemento) VALUES ('Set_20', 142, 00000042, 'Galpao14');
+
+
 
 --INSERINDO EQUIPAMENTOS
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (1, 'Equipamento1', 31886.00, '4 anos');
@@ -429,6 +408,8 @@ INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (78, 'Eq
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (79, 'Equipamento79', 94451.00, '7 anos');
 INSERT INTO equipamentos (tomb,nome_equipamento,preco,vida_util) VALUES (80, 'Equipamento80', 44555.00, '2 anos');
 
+
+
 --INSERINDO CENARIOS
 INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (41, 'Acao', 'Bloco', 483);
 INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (42, 'Animacao', 'Bloco', 877);
@@ -459,6 +440,8 @@ INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (66, 'Terror', 'Madeira'
 INSERT INTO cenario (tomb,tema,material,tamanho) VALUES (67, 'Trash', 'Papel', 191);
 
 
+
+
 --INSERINDO COMPUTADORES
 INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (1,  33333333333, 'intel i8 877 quad core', '8 GB', '2 TB');
 INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (2,  88888888888, 'intel i4 486 quad core', '8 GB', '6 TB');
@@ -479,8 +462,7 @@ INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES
 INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (17, 00000000073, 'intel i4 946 quad core', '9 GB', '3 TB');
 INSERT INTO computador (tomb,cpf_editor,processador,memoria,disco_rigido) VALUES (18, 00000000074, 'intel i1 224 quad core', '3 GB', '5 TB');
 
-
---INSERINDO CAMERAS	
+--INSERINDO CAMERAS
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (19, 'SZ071', 'Pentax');
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (20, 'MB631', 'Nikon');
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (21, 'PV575', 'Canon');
@@ -503,6 +485,8 @@ INSERT INTO camera (tomb, modelo, fabricante) VALUES (37, 'BY706', 'HP');
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (38, 'TJ618', 'Olympus');
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (39, 'WV064', 'HP');
 INSERT INTO camera (tomb, modelo, fabricante) VALUES (40, 'RV023', 'Pentax');
+
+
 
 --INSERINDO LENTES
 INSERT INTO lentes (tomb, lente) VALUES (19, 'BR071');
@@ -540,6 +524,8 @@ INSERT INTO lentes (tomb, lente) VALUES (35, 'KX318');
 INSERT INTO lentes (tomb, lente) VALUES (36, 'XY632');
 INSERT INTO lentes (tomb, lente) VALUES (38, 'CQ752');
 INSERT INTO lentes (tomb, lente) VALUES (39, 'TD603');
+
+
 
 --INSERINDO TELEFONE DOS FUNCIONARIOS
 INSERT INTO telefone_func (cpf, fone) VALUES (11111111111, 081191811211);
@@ -631,6 +617,8 @@ INSERT INTO telefone_func (cpf, fone) VALUES (00000000077, 081997747277);
 INSERT INTO telefone_func (cpf, fone) VALUES (00000000078, 081997847278);
 INSERT INTO telefone_func (cpf, fone) VALUES (00000000079, 081997843579);
 INSERT INTO telefone_func (cpf, fone) VALUES (00000000080, 081997843580);
+
+
 
 --INSERINDO EMAIL DE FUNCIONARIOS
 INSERT INTO email_func (cpf, email) VALUES (11111111111,'Peter@produtora.com.br');
@@ -814,6 +802,8 @@ INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000078, 87, 
 INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000079, 88, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2012'));
 INSERT INTO contratos (cpf, numero, data_in, data_fim) VALUES (00000000080, 89, to_date('01/12/1990', 'dd/mm/yy'), to_date('07/12/2018'));
 
+
+
 --INSERINDO MONTAGENS
 INSERT INTO monta (cpf, nome_filme) VALUES (33333333333, 'O Hobbit');
 INSERT INTO monta (cpf, nome_filme) VALUES (00000000004, 'Batman: O cavaleiro das trevas');
@@ -826,6 +816,7 @@ INSERT INTO monta (cpf, nome_filme) VALUES (00000000041, 'Interestelar');
 INSERT INTO monta (cpf, nome_filme) VALUES (00000000054, 'Piratas do Caribe: Navegando em Aguas Misteriosaso');
 INSERT INTO monta (cpf, nome_filme) VALUES (00000000063, 'Jurassic World: O Mundo dos Dinossauros');
 INSERT INTO monta (cpf, nome_filme) VALUES (00000000073, 'Cidade de Deus');
+
 
 --INSERINDO REVISOES
 INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (33333333333, 11111111111, 'O Hobbit', to_date('01/12/2000', 'dd/mm/yy'));
@@ -855,31 +846,23 @@ INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (0000
 INSERT INTO revisa (cpf_editor,cpf_diretor,nome_filme,data_revisao) VALUES (00000000073, 00000000067, 'Cidade de Deus', to_date('02/12/2001', 'dd/mm/yy'));
 
 --INSERINDO EQUIPAMENTOS ADQUIRIDOS POR FILMES
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O Hobbit', 20, Set_1);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 34, Set_2);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 14, Set_3);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 51, Set_4);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 22, Set_5);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 31, Set_6);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 1, Set_7);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 63, Set_8);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 39, Set_9);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Jurassic World: O Mundo dos Dinossauros', 8, Set_10);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 54, Set_11);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 39, Set_12);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 2, Set_13);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 19, Set_14);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 10, Set_15);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 5, Set_16);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 65, Set_17);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 28, Set_18);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 25, Set_19);
-INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 16, Set_20);
-
-
-
-
-
-
-
-
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O Hobbit', 20, 'Set_1');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 34, 'Set_2');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 14, 'Set_3');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 51, 'Set_4');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 22, 'Set_5');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 31, 'Set_6');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 1, 'Set_7');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 63, 'Set_8');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 39, 'Set_9');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Jurassic World: O Mundo dos Dinossauros', 8, 'Set_10');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 54, 'Set_11');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Batman: O cavaleiro das trevas', 39, 'Set_12');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Clube da Luta', 2, 'Set_13');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('O espetacular Homem-Aranha', 19, 'Set_14');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Anjos e Demonios', 10, 'Set_15');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('As Panteras Detonando', 5, 'Set_16');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Godzilla', 65, 'Set_17');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Interestelar', 28, 'Set_18');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Piratas do Caribe: Navegando em Aguas Misteriosaso', 25, 'Set_19');
+INSERT INTO adquirir (nome_filme,tomb,nome_amb_grav) VALUES ('Cidade de Deus', 16, 'Set_20');

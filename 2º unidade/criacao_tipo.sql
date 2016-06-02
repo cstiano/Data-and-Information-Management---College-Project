@@ -61,7 +61,8 @@ CREATE OR REPLACE TYPE tp_equipamentos AS OBJECT(
 /
 CREATE OR REPLACE TYPE tp_camera UNDER tp_equipamentos(
 	modelo VARCHAR2(50),
-	fabricante VARCHAR2(50)
+	fabricante VARCHAR2(50),
+	lentes tp_nt_lentes
 );
 /
 CREATE OR REPLACE TYPE tp_cenario UNDER tp_equipamentos(
@@ -93,7 +94,7 @@ CREATE OR REPLACE TYPE tp_diretor UNDER tp_funcionario(
 	atuacao VARCHAR2(20),
 	quant_filmes_trabalhados INTEGER,
 	ref_filme REF tp_filme,
-	ref_chef REF tp_diretor
+	ref_chefe REF tp_diretor
 );/
 CREATE OR REPLACE TYPE tp_ator UNDER tp_funcionario(
 	personagem VARCHAR2(15),

@@ -7,15 +7,16 @@ DROP TABLE tb_computador;
 DROP TABLE tb_diretor;
 DROP TABLE tb_ator;
 DROP TABLE tb_editor;
-DROP TABLE tb_contratos;
+DROP TABLE tb_contrato_diretor;
+DROP TABLE tb_contrato_ator;
+DROP TABLE tb_contrato_editor;
 DROP TABLE tb_utiliza;
 DROP TABLE tb_adquirir;
 DROP TABLE tb_monta;
 DROP TABLE tb_revisa;
 
 CREATE TABLE tb_produtora OF tp_produtora(
-	PRIMARY KEY (cnpj),
-	nome NOT NULL
+	PRIMARY KEY (cnpj)
 )NESTED TABLE telefone STORE AS tb_telefone_prod;
 
 CREATE TABLE tb_filme OF tp_filme(
@@ -60,8 +61,19 @@ CREATE TABLE tb_editor OF tp_editor(
 NESTED TABLE email STORE AS tb_email_editor;
 
 -- problema nessa tabela!!!!
-CREATE TABLE tb_contratos OF tp_contratos(
-	PRIMARY KEY()
+CREATE TABLE tb_contrato_diretor OF tp_contrato_diretor(
+	PRIMARY KEY(cpf, numero),
+	FOREIGN KEY (ref_diretor) REFERENCES tb_diretor
+);
+
+CREATE TABLE tb_contrato_ator OF tp_contrato_ator(
+	PRIMARY KEY(cpf, numero),
+	FOREIGN KEY (ref_ator) REFERENCES tb_ator
+);
+
+CREATE TABLE tb_contrato_editor OF tp_contrato_editor(
+	PRIMARY KEY(cpf, numero),
+	FOREIGN KEY (ref_editor) REFERENCES tb_editor
 );
 
 CREATE TABLE tb_utiliza OF tp_utiliza(

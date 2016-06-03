@@ -13,7 +13,9 @@ DROP TYPE tp_funcionario force;
 DROP TYPE tp_diretor force;
 DROP TYPE tp_ator force;
 DROP TYPE tp_editor force;
-DROP TYPE tp_contratos force;
+DROP TYPE tp_contrato_diretor force;
+DROP TYPE tp_contrato_ator force;
+DROP TYPE tp_contrato_editor force;
 DROP TYPE tp_utiliza force;
 DROP TYPE tp_adquirir force;
 DROP TYPE tp_monta force;
@@ -40,8 +42,9 @@ CREATE OR REPLACE TYPE tp_produtora AS OBJECT(
 /
 CREATE OR REPLACE TYPE tp_filme AS OBJECT(
 	nome VARCHAR2(50),
+	cnpj NUMBER,
 	data_lancamento DATE,
-	faturamento NUMBER,
+	faturamento DECIMAL(12,2),
 	data_inicio DATE,
 	ref_produtora REF tp_produtora
 )FINAL;
@@ -79,6 +82,7 @@ CREATE OR REPLACE TYPE tp_computador UNDER tp_equipamentos(
 /
 CREATE OR REPLACE TYPE tp_funcionario AS OBJECT(
 	cpf NUMBER,
+	cnpj NUMBER,
 	nome VARCHAR2(50),
 	dt_nascimento DATE,
 	sexo VARCHAR2(1),
@@ -93,6 +97,7 @@ CREATE OR REPLACE TYPE tp_diretor UNDER tp_funcionario(
 	quant_premiacoes INTEGER,
 	atuacao VARCHAR2(20),
 	quant_filmes_trabalhados INTEGER,
+	cpf_chefe NUMBER,
 	ref_filme REF tp_filme,
 	ref_chefe REF tp_diretor
 );/
@@ -106,12 +111,31 @@ CREATE OR REPLACE TYPE tp_editor UNDER tp_funcionario(
 	atuacao VARCHAR2(20),
 	quant_filmes_trabalhados INTEGER
 );/
-CREATE OR REPLACE TYPE tp_contratos AS OBJECT(
+
+CREATE OR REPLACE TYPE tp_contrato_diretor AS OBJECT(
+	cpf NUMBER,
 	numero NUMBER,
 	data_in DATE,
 	data_fim DATE,
-	ref_funcionario REF tp_funcionario
+	ref_diretor REF tp_diretor
 );/
+
+CREATE OR REPLACE TYPE tp_contrato_ator AS OBJECT(
+	cpf NUMBER,
+	numero NUMBER,
+	data_in DATE,
+	data_fim DATE,
+	ref_ator REF tp_ator
+);/
+
+CREATE OR REPLACE TYPE tp_contrato_editor AS OBJECT(
+	cpf NUMBER,
+	numero NUMBER,
+	data_in DATE,
+	data_fim DATE,
+	ref_editor REF tp_editor
+);/
+
 CREATE OR REPLACE TYPE tp_utiliza AS OBJECT(
 	cpf NUMBER,
 	tomb NUMBER,
@@ -127,16 +151,16 @@ CREATE OR REPLACE TYPE tp_adquirir AS OBJECT(
 	ref_ambiente_grav REF tp_ambiente_grav
 );/
 CREATE OR REPLACE TYPE tp_monta AS OBJECT(
-	nome_filme VARCHAR2(50),
 	cpf NUMBER,
+	nome_filme VARCHAR2(50),
 	ref_editor REF tp_editor,
 	ref_filme REF tp_filme
 );/
 CREATE OR REPLACE TYPE tp_revisa AS OBJECT(
-	data DATE,
 	cpf_editor NUMBER,
 	cpf_diretor NUMBER,
 	nome_filme VARCHAR2(50),
+	data DATE,
 	ref_diretor REF tp_diretor,
 	ref_monta REF tp_monta
 );/

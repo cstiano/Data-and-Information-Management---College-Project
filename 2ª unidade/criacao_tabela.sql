@@ -1,18 +1,21 @@
-DROP TABLE tb_produtora;
-DROP TABLE tb_filme;
-DROP TABLE tb_ambiente_grav;
-DROP TABLE tb_camera;
-DROP TABLE tb_cenario;
-DROP TABLE tb_computador;
-DROP TABLE tb_diretor;
-DROP TABLE tb_ator;
-DROP TABLE tb_editor;
-DROP TABLE tb_contrato_diretor;
-DROP TABLE tb_contrato_ator;
-DROP TABLE tb_contrato_editor;
-DROP TABLE tb_adquirir;
-DROP TABLE tb_monta;
 DROP TABLE tb_revisa;
+DROP TABLE tb_monta;
+DROP TABLE tb_adquirir_cam;
+DROP TABLE tb_adquirir_cen;
+DROP TABLE tb_adquirir_com;
+DROP TABLE tb_contrato_editor;
+DROP TABLE tb_contrato_ator;
+DROP TABLE tb_contrato_diretor;
+DROP TABLE tb_computador;
+DROP TABLE tb_editor;
+DROP TABLE tb_ator;
+DROP TABLE tb_diretor;
+DROP TABLE tb_cenario;
+DROP TABLE tb_camera;
+DROP TABLE tb_ambiente_grav;
+DROP TABLE tb_filme;
+DROP TABLE tb_produtora;
+
 
 CREATE TABLE tb_produtora OF tp_produtora(
 	PRIMARY KEY (cnpj)
@@ -78,10 +81,24 @@ CREATE TABLE tb_contrato_editor OF tp_contrato_editor(
 );
 
 
-CREATE TABLE tb_aquirir OF tp_aquirir(
+CREATE TABLE tb_adquirir_cam OF tp_adquirir_cam(
 	PRIMARY KEY(nome_filme,tomb),
 	nome_grav NOT NULL,
-	FOREIGN KEY (ref_equipamentos) REFERENCES tb_equipamentos,
+	FOREIGN KEY (ref_camera) REFERENCES tb_camera,
+	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
+);
+
+CREATE TABLE tb_adquirir_cen OF tp_adquirir_cen(
+	PRIMARY KEY(nome_filme,tomb),
+	nome_grav NOT NULL,
+	FOREIGN KEY (ref_cenario) REFERENCES tb_cenario,
+	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
+);
+
+CREATE TABLE tb_adquirir_com OF tp_adquirir_com(
+	PRIMARY KEY(nome_filme,tomb),
+	nome_grav NOT NULL,
+	FOREIGN KEY (ref_computador) REFERENCES tb_computador,
 	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
 );
 

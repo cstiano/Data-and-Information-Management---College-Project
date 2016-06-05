@@ -48,12 +48,60 @@ CREATE OR REPLACE TYPE tp_filme AS OBJECT(
 	ref_produtora REF tp_produtora
 )FINAL;
 /
+
+
+
+CREATE OR REPLACE TYPE tp_funcionario AS OBJECT(
+	cpf NUMBER,
+	cnpj NUMBER,
+	nome VARCHAR2(50),
+	dt_nascimento DATE,
+	sexo VARCHAR2(1),
+	salario DECIMAL(12,2),
+	telefone tp_nt_fone,
+	email tp_nt_email,
+	endereco tp_endereco,
+	ref_produtora REF tp_produtora
+)NOT FINAL NOT INSTANTIABLE;
+/
+
+CREATE OR REPLACE TYPE tp_ator UNDER tp_funcionario(
+	personagem VARCHAR2(15),
+	agencia VARCHAR2(15),
+	carac_fisicas VARCHAR2(50)
+);
+/
+
+CREATE OR REPLACE TYPE tp_editor UNDER tp_funcionario(
+	quant_premiacoes INTEGER,
+	atuacao VARCHAR2(20),
+	quant_filmes_trabalhados INTEGER
+);
+/
+
+
+CREATE OR REPLACE TYPE tp_diretor UNDER tp_funcionario(
+	quant_premiacoes INTEGER,
+	atuacao VARCHAR2(20),
+	quant_filmes_trabalhados INTEGER,
+	cpf_chefe NUMBER,
+	ref_filme REF tp_filme,
+	ref_chefe REF tp_diretor
+);
+/
+
+
+
+
 CREATE OR REPLACE TYPE tp_ambiente_grav AS OBJECT(
 	nome VARCHAR2(50),
 	tamanho NUMBER,
 	endereco tp_endereco
 )FINAL;
 /
+
+
+
 CREATE OR REPLACE TYPE tp_equipamentos AS OBJECT(
 	tomb NUMBER,
 	nome_equipamento VARCHAR2(50),
@@ -73,6 +121,8 @@ CREATE OR REPLACE TYPE tp_cenario UNDER tp_equipamentos(
 	tamanho NUMBER
 );
 /
+
+
 CREATE OR REPLACE TYPE tp_computador UNDER tp_equipamentos(
 	processador VARCHAR2(30),
 	memoria VARCHAR2(50),
@@ -81,37 +131,6 @@ CREATE OR REPLACE TYPE tp_computador UNDER tp_equipamentos(
 	ref_editor ref tp_editor
 );
 /
-CREATE OR REPLACE TYPE tp_funcionario AS OBJECT(
-	cpf NUMBER,
-	cnpj NUMBER,
-	nome VARCHAR2(50),
-	dt_nascimento DATE,
-	sexo VARCHAR2(1),
-	salario DECIMAL(12,2),
-	telefone tp_nt_fone,
-	email tp_nt_email,
-	endereco tp_endereco,
-	ref_produtora REF tp_produtora
-)NOT FINAL NOT INSTANTIABLE;
-/
-CREATE OR REPLACE TYPE tp_diretor UNDER tp_funcionario(
-	quant_premiacoes INTEGER,
-	atuacao VARCHAR2(20),
-	quant_filmes_trabalhados INTEGER,
-	cpf_chefe NUMBER,
-	ref_filme REF tp_filme,
-	ref_chefe REF tp_diretor
-);/
-CREATE OR REPLACE TYPE tp_ator UNDER tp_funcionario(
-	personagem VARCHAR2(15),
-	agencia VARCHAR2(15),
-	carac_fisicas VARCHAR2(50)
-);/
-CREATE OR REPLACE TYPE tp_editor UNDER tp_funcionario(
-	quant_premiacoes INTEGER,
-	atuacao VARCHAR2(20),
-	quant_filmes_trabalhados INTEGER
-);/
 
 CREATE OR REPLACE TYPE tp_contrato_diretor AS OBJECT(
 	cpf NUMBER,
@@ -119,7 +138,8 @@ CREATE OR REPLACE TYPE tp_contrato_diretor AS OBJECT(
 	data_in DATE,
 	data_fim DATE,
 	ref_diretor REF tp_diretor
-);/
+);
+/
 
 CREATE OR REPLACE TYPE tp_contrato_ator AS OBJECT(
 	cpf NUMBER,
@@ -127,7 +147,8 @@ CREATE OR REPLACE TYPE tp_contrato_ator AS OBJECT(
 	data_in DATE,
 	data_fim DATE,
 	ref_ator REF tp_ator
-);/
+);
+/
 
 CREATE OR REPLACE TYPE tp_contrato_editor AS OBJECT(
 	cpf NUMBER,
@@ -135,22 +156,47 @@ CREATE OR REPLACE TYPE tp_contrato_editor AS OBJECT(
 	data_in DATE,
 	data_fim DATE,
 	ref_editor REF tp_editor
-);/
+);
+/
 
-CREATE OR REPLACE TYPE tp_adquirir AS OBJECT(
+CREATE OR REPLACE TYPE tp_adquirir_cam AS OBJECT(
 	nome_filme VARCHAR2(50),
 	tomb NUMBER,
 	nome_grav VARCHAR2(50),
 	ref_filme REF tp_filme,
-	ref_equipamentos REF tp_equipamentos,
+	ref_camera REF tp_camera,
 	ref_ambiente_grav REF tp_ambiente_grav
-);/
+);
+/
+
+CREATE OR REPLACE TYPE tp_adquirir_cen AS OBJECT(
+	nome_filme VARCHAR2(50),
+	tomb NUMBER,
+	nome_grav VARCHAR2(50),
+	ref_filme REF tp_filme,
+	ref_cenario REF tp_cenario,
+	ref_ambiente_grav REF tp_ambiente_grav
+);
+/
+
+CREATE OR REPLACE TYPE tp_adquirir_com AS OBJECT(
+	nome_filme VARCHAR2(50),
+	tomb NUMBER,
+	nome_grav VARCHAR2(50),
+	ref_filme REF tp_filme,
+	ref_computador REF tp_computador,
+	ref_ambiente_grav REF tp_ambiente_grav
+);
+/
+
 CREATE OR REPLACE TYPE tp_monta AS OBJECT(
 	cpf NUMBER,
 	nome_filme VARCHAR2(50),
 	ref_editor REF tp_editor,
 	ref_filme REF tp_filme
-);/
+);
+/
+
 CREATE OR REPLACE TYPE tp_revisa AS OBJECT(
 	cpf_editor NUMBER,
 	cpf_diretor NUMBER,
@@ -158,4 +204,5 @@ CREATE OR REPLACE TYPE tp_revisa AS OBJECT(
 	data DATE,
 	ref_diretor REF tp_diretor,
 	ref_monta REF tp_monta
-);/
+);
+/

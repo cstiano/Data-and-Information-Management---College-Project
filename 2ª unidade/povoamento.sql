@@ -9,14 +9,14 @@ INSERT INTO tb_produtora VALUES(
 INSERT INTO tb_produtora VALUES(
 	22222222222222, 
 	'Time Warner', 
-	tp_nt_fone(081981621412, 081981621413, 081981621342),
+	tp_nt_fone(081981621322, 081981121413, 08133321342),
 	tp_endereco(22222222,'Rua da Warner','tchuchu')
 	);
 
 INSERT INTO tb_produtora VALUES(
 	33333333333333, 
-	'Time Warner', 
-	tp_nt_fone(081981621412, 081981621413, 081981621342),
+	'The Walt Disney', 
+	tp_nt_fone(0819816214352, 081981621333, 081981621142),
 	tp_endereco(33333333,'The Walt Disney Company','balaca')
 	);
 
@@ -176,7 +176,7 @@ INSERT INTO tb_diretor(
 	tp_nt_fone(081991244512),
 	tp_nt_email('felps@produtora.com.br'),
 	tp_endereco(00000002, 'Rua do men','n 12'), 
-	'Hobbit', 
+	'O Hobbit', 
 	0, 
 	'GERAL', 				
 	6, 	  
@@ -359,7 +359,7 @@ INSERT INTO tb_contrato_editor(
 );
 
 --tb_adquirir
-INSERT INTO tb_adquirir(
+INSERT INTO tb_adquirir_cam(
 	'O espetacular Homem-Aranha', 
 	16, 
 	'Set_1',
@@ -368,7 +368,7 @@ INSERT INTO tb_adquirir(
 	(SELECT REF(A) FROM tb_ambiente_grav A WHERE A.nome = 'Set_1')
 );
 
-INSERT INTO tb_adquirir(
+INSERT INTO tb_adquirir_cen(
 	'Matrix', 
 	19, 
 	'Set_2',
@@ -377,8 +377,8 @@ INSERT INTO tb_adquirir(
 	(SELECT REF(A) FROM tb_ambiente_grav A WHERE A.nome = 'Set_2')
 );
 
-INSERT INTO tb_adquirir(
-	'Hobbit', 
+INSERT INTO tb_adquirir_com(
+	'O Hobbit', 
 	5, 
 	'Set_3',
 	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'Matrix'),

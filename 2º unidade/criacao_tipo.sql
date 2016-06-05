@@ -16,7 +16,6 @@ DROP TYPE tp_editor force;
 DROP TYPE tp_contrato_diretor force;
 DROP TYPE tp_contrato_ator force;
 DROP TYPE tp_contrato_editor force;
-DROP TYPE tp_utiliza force;
 DROP TYPE tp_adquirir force;
 DROP TYPE tp_monta force;
 DROP TYPE tp_revisa force;
@@ -77,7 +76,9 @@ CREATE OR REPLACE TYPE tp_cenario UNDER tp_equipamentos(
 CREATE OR REPLACE TYPE tp_computador UNDER tp_equipamentos(
 	processador VARCHAR2(30),
 	memoria VARCHAR2(50),
-	disco_rigido VARCHAR2(50)
+	disco_rigido VARCHAR2(50),
+	cpf_editor NUMBER,
+	ref_editor ref tp_editor
 );
 /
 CREATE OR REPLACE TYPE tp_funcionario AS OBJECT(
@@ -136,12 +137,6 @@ CREATE OR REPLACE TYPE tp_contrato_editor AS OBJECT(
 	ref_editor REF tp_editor
 );/
 
-CREATE OR REPLACE TYPE tp_utiliza AS OBJECT(
-	cpf NUMBER,
-	tomb NUMBER,
-	ref_editor REF tp_editor,
-	ref_computador REF tp_computador
-);/
 CREATE OR REPLACE TYPE tp_adquirir AS OBJECT(
 	nome_filme VARCHAR2(50),
 	tomb NUMBER,

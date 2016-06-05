@@ -129,37 +129,6 @@ INSERT INTO tb_cenario(
 	'Bloco', 
 	 481
 );
-
---tb_computador
-INSERT INTO tb_computador(
-	1, 
-	'Equipamento1', 
-	31886.00, 
-	'4 anos',
-	'intel i8 877 quad core', 
-	'8 GB', 
-	'2 TB'
-);
-
-INSERT INTO tb_computador(
-	2, 
-	'Equipamento2', 
-	3188.00, 
-	'2 anos',
-	'intel i3 5667 quad core', 
-	'4 GB', 
-	'2 TB'
-);
-
-INSERT INTO tb_computador(
-	3, 
-	'Equipamento3', 
-	20000.00, 
-	'1 anos',
-	'intel xeon 877 quad core', 
-	'16 GB', 
-	'2 TB'
-);
 --tb_diretor
 INSERT INTO tb_diretor(
 	00000000012,
@@ -295,6 +264,47 @@ INSERT INTO tb_editor(
 	10,
 	(SELECT REF(E) FROM tb_produtora E WHERE E.cnpj = 22222222222222)
 );
+
+
+
+--tb_computador
+INSERT INTO tb_computador(
+	1, 
+	'Equipamento1', 
+	31886.00, 
+	'4 anos',
+	'intel i8 877 quad core', 
+	'8 GB', 
+	'2 TB',
+	NULL,
+	NULL
+);
+
+INSERT INTO tb_computador(
+	2, 
+	'Equipamento2', 
+	3188.00, 
+	'2 anos',
+	'intel i3 5667 quad core', 
+	'4 GB', 
+	'2 TB',
+	00000000018,
+	(SELECT REF(C) FROM tb_editor C WHERE C.cpf = 00000000018)
+);
+
+INSERT INTO tb_computador(
+	3, 
+	'Equipamento3', 
+	20000.00, 
+	'1 anos',
+	'intel xeon 877 quad core', 
+	'16 GB', 
+	'2 TB',
+	00000000019,
+	(SELECT REF(C) FROM tb_editor C WHERE C.cpf = 00000000019)
+);
+
+
 --tb_contrato_diretor
 INSERT INTO tb_contrato_diretor(
 	00000000013, 
@@ -348,35 +358,65 @@ INSERT INTO tb_contrato_editor(
 	(SELECT REF(C) FROM tb_editor C WHERE C.cpf = 00000000019)
 );
 
---tb_utiliza
-INSERT INTO tb_utiliza(
-	00000000015,
-	1,
-	(SELECT REF(U) FROM tb_editor U WHERE U.cpf = 00000000015),
-	(SELECT REF(C) FROM tb_computador C WHERE C.tomb = 1)
-);
 --tb_adquirir
 INSERT INTO tb_adquirir(
 	'O espetacular Homem-Aranha', 
-	20, 
+	16, 
 	'Set_1',
 	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'O espetacular Homem-Aranha'),
-	(SELECT REF(T) FROM tb_camera T WHERE T.tomb = 20),
+	(SELECT REF(T) FROM tb_camera T WHERE T.tomb = 16),
 	(SELECT REF(A) FROM tb_ambiente_grav A WHERE A.nome = 'Set_1')
+);
+
+INSERT INTO tb_adquirir(
+	'Matrix', 
+	19, 
+	'Set_2',
+	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'Matrix'),
+	(SELECT REF(T) FROM tb_camera T WHERE T.tomb = 19),
+	(SELECT REF(A) FROM tb_ambiente_grav A WHERE A.nome = 'Set_2')
+);
+
+INSERT INTO tb_adquirir(
+	'Hobbit', 
+	5, 
+	'Set_3',
+	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'Matrix'),
+	(SELECT REF(T) FROM tb_camera T WHERE T.tomb = 5),
+	(SELECT REF(A) FROM tb_ambiente_grav A WHERE A.nome = 'Set_3')
 );
 --tb_monta
 INSERT INTO tb_monta(
-	00000000015, 
+	00000000018, 
 	'O espetacular Homem-Aranha',
-	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000015),
+	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000018),
 	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'O espetacular Homem-Aranha')	
 );
+
+
+INSERT INTO tb_monta(
+	00000000019, 
+	'Matrix',
+	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000019),
+	(SELECT REF(F) FROM tb_filme F WHERE F.nome = 'Matrix')	
+);
+
+
 --tb_revisa
 INSERT INTO tb_revisa(
-	00000000015, 
+	00000000018, 
 	00000000012, 
 	'O espetacular Homem-Aranha', 
 	to_date('01/12/2011', 'dd/mm/yy'),
-	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000015),
-	(SELECT REF(M) FROM tb_monta M WHERE M.cpf = 00000000015 AND M.nome_filme = 'O espetacular Homem-Aranha')
+	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000018),
+	(SELECT REF(M) FROM tb_monta M WHERE M.cpf = 00000000012 AND M.nome_filme = 'O espetacular Homem-Aranha')
+);
+
+INSERT INTO tb_revisa(
+	00000000019, 
+	00000000013, 
+	'Matrix', 
+	to_date('01/12/1995', 'dd/mm/yy'),
+	(SELECT REF(E) FROM tb_editor E WHERE E.cpf = 00000000019),
+	(SELECT REF(M) FROM tb_monta M WHERE M.cpf = 00000000013 AND M.nome_filme = 'Matrix')
 );

@@ -10,7 +10,6 @@ DROP TABLE tb_editor;
 DROP TABLE tb_contrato_diretor;
 DROP TABLE tb_contrato_ator;
 DROP TABLE tb_contrato_editor;
-DROP TABLE tb_utiliza;
 DROP TABLE tb_adquirir;
 DROP TABLE tb_monta;
 DROP TABLE tb_revisa;
@@ -36,10 +35,6 @@ CREATE TABLE tb_cenario OF tp_cenario(
 	PRIMARY KEY(tomb)
 );
 
-CREATE TABLE tb_computador OF tp_computador(
-	PRIMARY KEY(tomb)
-);
-
 CREATE TABLE tb_diretor OF tp_diretor(
 	PRIMARY KEY(cpf),
 	FOREIGN KEY (ref_produtora) REFERENCES tb_produtora,
@@ -60,6 +55,12 @@ CREATE TABLE tb_editor OF tp_editor(
 )NESTED TABLE telefone STORE AS tb_telefone_editor
 NESTED TABLE email STORE AS tb_email_editor;
 
+
+CREATE TABLE tb_computador OF tp_computador(
+	PRIMARY KEY(tomb),
+	FOREIGN KEY (ref_editor) REFERENCES tb_editor
+);
+
 -- problema nessa tabela!!!!
 CREATE TABLE tb_contrato_diretor OF tp_contrato_diretor(
 	PRIMARY KEY(cpf, numero),
@@ -76,10 +77,6 @@ CREATE TABLE tb_contrato_editor OF tp_contrato_editor(
 	FOREIGN KEY (ref_editor) REFERENCES tb_editor
 );
 
-CREATE TABLE tb_utiliza OF tp_utiliza(
-	PRIMARY KEY(cpf,tomb),
-	FOREIGN KEY (ref_computador) REFERENCES tb_computador
-);
 
 CREATE TABLE tb_aquirir OF tp_aquirir(
 	PRIMARY KEY(nome_filme,tomb),

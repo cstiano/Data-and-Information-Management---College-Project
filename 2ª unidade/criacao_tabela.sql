@@ -84,6 +84,7 @@ CREATE TABLE tb_contrato_editor OF tp_contrato_editor(
 CREATE TABLE tb_adquirir_cam OF tp_adquirir_cam(
 	PRIMARY KEY(nome_filme,tomb),
 	nome_grav NOT NULL,
+	FOREIGN KEY (ref_filme) REFERENCES tb_filme,
 	FOREIGN KEY (ref_camera) REFERENCES tb_camera,
 	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
 );
@@ -91,6 +92,7 @@ CREATE TABLE tb_adquirir_cam OF tp_adquirir_cam(
 CREATE TABLE tb_adquirir_cen OF tp_adquirir_cen(
 	PRIMARY KEY(nome_filme,tomb),
 	nome_grav NOT NULL,
+	FOREIGN KEY (ref_filme) REFERENCES tb_filme,
 	FOREIGN KEY (ref_cenario) REFERENCES tb_cenario,
 	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
 );
@@ -98,6 +100,7 @@ CREATE TABLE tb_adquirir_cen OF tp_adquirir_cen(
 CREATE TABLE tb_adquirir_com OF tp_adquirir_com(
 	PRIMARY KEY(nome_filme,tomb),
 	nome_grav NOT NULL,
+	FOREIGN KEY (ref_filme) REFERENCES tb_filme,
 	FOREIGN KEY (ref_computador) REFERENCES tb_computador,
 	FOREIGN KEY (ref_ambiente_grav) REFERENCES tb_ambiente_grav
 );

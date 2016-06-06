@@ -1,6 +1,8 @@
 DROP TYPE tp_revisa force;
 DROP TYPE tp_monta force;
-DROP TYPE tp_adquirir force;
+DROP TYPE tp_adquirir_com force;
+DROP TYPE tp_adquirir_cen force;
+DROP TYPE tp_adquirir_cam force;
 DROP TYPE tp_contrato_editor force;
 DROP TYPE tp_contrato_ator force;
 DROP TYPE tp_contrato_diretor force;
@@ -81,6 +83,7 @@ CREATE OR REPLACE TYPE tp_editor UNDER tp_funcionario(
 
 
 CREATE OR REPLACE TYPE tp_diretor UNDER tp_funcionario(
+	nome_filme VARCHAR2(50),
 	quant_premiacoes INTEGER,
 	atuacao VARCHAR2(20),
 	quant_filmes_trabalhados INTEGER,

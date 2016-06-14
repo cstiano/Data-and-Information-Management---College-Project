@@ -115,8 +115,39 @@ END;
 /
 
 -- 3. Criação de um tipo que contenha um atributo que seja de um tipo VARRAY
-
 -- 4. Criação de um tipo que contenha um atributo que seja de um tipo NESTED TABLE
+
+DROP TYPE tp_sala FORCE;
+DROP TYPE tp_cartaz FORCE;
+DROP TYPE tp_salas FORCE;
+DROP TYPE tp_nt_cartaz FORCE;
+DROP TYPE tp_cinema FORCE;
+
+CREATE OR REPLACE TYPE tp_sala AS OBJECT(
+	area NUMBER,
+	poltronas NUMBER
+);
+/
+
+CREATE OR REPLACE TYPE tp_cartaz AS OBJECT(
+	filme tp_filme,
+	largura NUMBER,
+	altura NUMBER,
+	data_estreia DATE
+);
+/
+
+CREATE OR REPLACE TYPE tp_salas AS VARRAY(5) OF tp_sala;
+/
+
+CREATE OR REPLACE TYPE tp_nt_cartaz AS TABLE OF tp_cartaz;
+/
+
+CREATE OR REPLACE TYPE tp_cinema AS OBJECT(
+	salas tp_salas,
+	cartaz tp_nt_cartaz
+);
+/
 
 -- 8. Criação e chamada de um método ORDER em um comando SELECT e em um bloco PL
 DROP TABLE tb_ingresso force;
